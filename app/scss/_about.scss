@@ -1,0 +1,103 @@
+.about {
+
+  &__title-wrap {
+    max-width: 33rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4.375rem;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    max-width: 35rem;
+    width: 100%;
+  }
+
+  &__content-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 158%;
+  }
+
+  &__content-text {
+    font-weight: normal;
+    margin-bottom: 1.6875rem;
+  }
+
+  &__content-items {
+    list-style: none;
+  }
+
+  &__content-item {
+    display: block;
+    padding-left: 6rem;
+    position: relative;
+
+    &+& {
+      margin-top: 2.5rem;
+    }
+
+    &:after {
+      content: '';
+      border: 1px solid $theme-color-green;
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+    }
+
+    &:nth-child(2):after {
+      border: 1px solid $theme-color-red;
+    }
+
+    &:before {
+      transform: scaleX(-1) rotate(135deg);
+      transform-origin: left top;
+      border-right: 4px solid $theme-color-green;
+      border-top: 4px solid $theme-color-green;
+      content: '';
+      display: block;
+      height: 2rem;
+      left: 4.5%;
+      position: absolute;
+      top: 45%;
+      width: 1rem;
+    }
+
+    &:nth-child(2):before {
+      animation-delay: 1s;
+      border-right: 4px solid $theme-color-red;
+      border-top: 4px solid $theme-color-red;
+    }
+  }
+
+  .about__content-items.start {
+    .about__content-item {
+      &:before {
+        animation: check .8s ease-out forwards;
+      }
+
+      &:nth-child(3):before {
+        animation-delay: 2s;
+      }
+
+      &:nth-child(2):before {
+        animation-delay: 1s;
+      }
+    }
+  }
+
+  &__content-item-title {
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: .7rem;
+  }
+}

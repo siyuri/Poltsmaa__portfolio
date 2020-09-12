@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a:focus,
+a:active {
+  outline: 1px dotted $theme-color-green;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a,
+button {
+  cursor: pointer
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 1.0625rem;
+  line-height: 153%;
+  color: $text;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  &--right {
+    padding-left: 20%;
+  }
+
+  &--center {
+    padding: 0 6%;
+  }
+
+  &--middle {
+    padding: 0 25%;
+  }
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus {
+  outline: transparent;
+}
+
+.title {
+  &__top {
+    color: $theme-color-green;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+
+  position: relative;
+  font-family: Rubik,
+  sans-serif;
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 120%;
+  margin-bottom: .2em;
+  color: $title;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: .5rem;
+    width: 18.75rem;
+    bottom: 8%;
+    right: 0;
+    background-color: $theme-color-green;
+    z-index: -1;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}

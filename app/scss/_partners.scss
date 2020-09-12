@@ -1,0 +1,29 @@
+.partners {
+  margin-bottom: 11.5rem;
+
+  &__title {
+    font-family: Rubik, sans-serif;
+    font-size: 1.25rem;
+    line-height: 130%;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    flex-basis: 1 0 3.75rem;
+    opacity: .6;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2);
+      transition: .5s;
+    }
+  }
+}

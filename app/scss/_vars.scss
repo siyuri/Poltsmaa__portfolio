@@ -1,0 +1,13 @@
+$theme-color-green: #7FB800;
+$theme-color-red:#FAB522;
+$text:#443737;
+$title:#1D4D4F;
+$tl:0.6s; //transition lenght
+
+%gradient-green {
+  background: linear-gradient(334.24deg, #7FB800 -9.84%, #0F9B0F 121.28%);
+}
+
+%gradient-orange {
+  background: linear-gradient(334.24deg, #F07B01 -9.84%, #FEE2B8 121.28%);
+}

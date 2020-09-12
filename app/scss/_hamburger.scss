@@ -1,0 +1,48 @@
+.navicon {
+  display: none;
+  width: 100%;
+  background: transparent;
+  position: relative;
+  height: 30px;
+  width: 50px;
+  z-index: 99;
+  transition: linear 0.5s all;
+
+  &:before,
+  &:after {
+    background: $title;
+    backface-visibility: hidden;
+    content: "";
+    height: 3px;
+    left: 0;
+    transition: 0.8s ease;
+    width: 45px;
+  }
+
+  &:before {
+    box-shadow: $title 0 14px 0 0;
+    position: absolute;
+    top: 0;
+  }
+
+  &:after {
+    position: absolute;
+    top: 28px;
+  }
+
+  &--active {
+    margin-top: 20px;
+    transition: linear 0.5s all;
+
+    &:before {
+      box-shadow: transparent 0 0 0 0;
+      top: 15px;
+      transform: rotate(225deg);
+    }
+
+    &:after {
+      top: 15px;
+      transform: rotate(315deg);
+    }
+  }
+}

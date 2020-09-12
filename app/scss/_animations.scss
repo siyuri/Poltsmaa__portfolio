@@ -1,0 +1,26 @@
+@keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+
+  33.3333% {
+    width: 1rem;
+    height: 0;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: 400%;
+  }
+
+  50% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: -400%;
+  }
+
+}

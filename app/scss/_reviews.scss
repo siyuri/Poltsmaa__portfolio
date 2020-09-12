@@ -1,0 +1,42 @@
+.reviews {
+
+  &__wrapper {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/pexels-photo-4230629.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 8rem;
+      background-clip: padding-box;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -2;
+    }
+  }
+
+  &__inner {
+    margin-top: 6.5625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title-wrap {
+    max-width: 22.5rem;
+    width: 100%;
+    margin-bottom: 4.0625rem;
+    z-index: 0;
+  }
+
+  &__title {
+    &:before {
+      z-index: -1;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.facts {
+  margin-top: 6rem;
+
+  &__inner {
+    display: flex;
+
+  }
+
+  &__img {
+    background-repeat: no-repeat;
+    background-position: calc(46% - 317px) 0;
+    width: 46%;
+    background-size: cover;
+  }
+
+  &__content {
+    padding: 2.5rem 0 4.8125rem 6.875rem; //72 auto 45 110;
+    max-width: 42.5rem;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 1.875rem;
+  }
+
+  &__text {
+    margin-bottom: 2.6875rem;
+  }
+
+  &__progress {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  &__progress-ring {
+    text-align: center;
+
+    &+& {
+      margin-left: 4.375rem;
+    }
+
+    position: relative;
+
+  }
+
+  .progress-ring__circle {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 4s;
+    stroke-linecap: round;
+  }
+
+  &__progress-number {
+    position: absolute;
+    top: calc(60% - 36px/2 - 24.5px);
+    left: 30%;
+    color: $title;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 129%;
+    font-family: Rubik, sans-serif;
+
+    &.facts__progress-number--twonumber {
+      top: calc(60% - 36px/2 - 25px);
+      left: 35%;
+    }
+  }
+
+  &__progress-text {
+    color: $title;
+    font-family: Rubik, sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 130%;
+    position: absolute;
+    bottom: -20%;
+    text-align: center;
+
+    &--first {
+      width: 50%;
+      left: 26%;
+    }
+
+    &--second {
+      width: 50%;
+      left: 26%;
+    }
+
+    &--third {
+      width: 50%;
+      left: 26%;
+    }
+  }
+
+
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 35%;
+  padding-bottom: 35%;
+  vertical-align: middle;
+  //overflow: hidden;
+}
+
+.progress-ring {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
